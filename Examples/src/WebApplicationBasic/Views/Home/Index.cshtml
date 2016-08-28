@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>@ViewData["Title"].</h2>
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li>Authentication Type: @User.Identity.AuthenticationType</li>
+            <li>Logged/Authenticated: @User.Identity.IsAuthenticated</li>
+        </ul>
+    </div>
+</div>
+
