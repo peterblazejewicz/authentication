@@ -27,6 +27,7 @@ namespace WebApplicationBasic.Controllers
         public async Task<IActionResult> Login()
         {
             const string Issuer = "https://example.com";
+            // see: http://andrewlock.net/introduction-to-authentication-with-asp-net-core/
             var claims = new List<Claim> {
                 new Claim(ClaimTypes.Name, "Andrew", ClaimValueTypes.String, Issuer),
                 new Claim(ClaimTypes.Surname, "Lock", ClaimValueTypes.String, Issuer),
